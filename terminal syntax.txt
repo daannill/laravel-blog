@@ -1,0 +1,15 @@
+Terminal Database:
+- php artisan migrate (digunakan untuk membuat sebuah kerangka tabel)
+- php artisan migrate:fresh (digunakan untuk menghapus kerangka tabel lalu membuat lagi secara langusung)
+- php artisan migrate:roolback (Menghapus atau menjalankan fungsi down)
+- php artisan make:model -m nama_model (untuk membuat model langsung dengan migration)
+- php artisan route:list
+- php artisan storage:link
+- php artisan tinker (untuk masuk mode mengisi data database)
+- $post = new App\Models\(nama model) (digunakan untuk bisa menggunakan class tersebut) atau $post = new (nama class)
+- $post::find('nama data yang mau dicari') (digunakan untuk menemukan data yang ada)
+- $post::find()->update([]) (digunakan untuk mencari dan mengupdate data)
+- $post::where('','')->update([]) (sama dengan yang diatas)
+- $post::pluck('') (digunakan untuk mencari data yang ada pada kolom tertentu)
+- $post->title = 'judul' (digunakan untuk mengisi data satu-satu)
+- $post->save() (digunakan untuk mengsave data yang diisi satu-satu)
